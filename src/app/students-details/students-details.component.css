@@ -1,0 +1,29 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus, .btn:focus{
+  outline: none !important;
+  border-color: #77D29B !important;
+  box-shadow: 0 0 0px #77D29B !important;
+}
+::placeholder{
+  color: #77D29B;
+  font-size: 12px;
+}
+img{
+  width: 50%;
+}
+.text{
+  line-height: 6px;
+  margin-top: 35px;
+  margin-left: -15px;
+}
+.car{
+  cursor: pointer;
+}
+.Ui{
+  overflow-y: scroll;
+  height: 75vh;
+}

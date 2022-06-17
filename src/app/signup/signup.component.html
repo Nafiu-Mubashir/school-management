@@ -1,0 +1,31 @@
+<section>
+  <div class="card w-50 m-auto mt-5">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="text text-center fs-5">Register a Student</h4>
+            <input type="text" placeholder="First Name" [(ngModel)]="student.firstname" class="form-control mt-2">
+            <input type="text" placeholder="Last Name" [(ngModel)]="student.lastname" class="form-control mt-2">
+            <input type="email" placeholder="Email" [(ngModel)]="student.email" class="form-control mt-2">
+            <input type="text" placeholder="Username" [(ngModel)]="student.username" class="form-control mt-2">
+            <!-- <input type="number" placeholder="Matric Number" [(ngModel)]="student.matricNum" class="form-control mt-2"> -->
+            <input type="number" placeholder="Phone Number" [(ngModel)]="student.phoneNo" class="form-control mt-2">
+            <button class="btn btn-outline-success w-100 mt-2" mat-btn (click)="submit()">Register</button>
+
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 bg-dark">
+          <div class="card-body">
+            <app-signed-students></app-signed-students>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

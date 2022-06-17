@@ -1,0 +1,49 @@
+<section>
+  <div class="card">
+    <div class="card-body p-5">
+      <div class="d-flex justify-content-between">
+        <div class="col-4">
+          <div class="mt-4">
+            <img src="assets/user-removebg-preview.png" class="d-block" alt="">
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row mt-3">
+            <div class="col text-center">
+              <input type="text" class="form-control" placeholder="First name" [(ngModel)]="firstname" id="first" disabled>
+              <label for="" class="text-center mt-2">First name</label>
+            </div>
+            <div class="col text-center">
+              <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="lastname" id="last" disabled>
+              <label for="" class="text-center mt-2">Last name</label>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col text-center">
+              <input type="text" class="form-control" placeholder="Username" [(ngModel)]="username" id="user" disabled>
+              <label for="" class="text-center mt-2">Username</label>
+            </div>
+            <div class="col text-center">
+              <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email" id="emails" disabled>
+              <label for="" class="text-center mt-2">Email</label>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col text-center">
+              <input type="number" class="form-control" placeholder="Phone Numnber" [(ngModel)]="phoneNo" id="phone" disabled>
+              <label for="" class="text-center mt-2">Phone Numnber</label>
+            </div>
+            <div class="col text-center">
+              <input type="number" class="form-control" placeholder="Matric Number" [(ngModel)]="matricNo" id="matric" disabled>
+              <label for="" class="text-center mt-2">Matric Number</label>
+            </div>
+          </div>
+          <div class="w-100 d-flex m-auto mt-2 d-block">
+            <button class="btn w-50 btn-outline-success" (click)="edit()">{{toEdit}}</button>
+            <button class="btn w-50 btn-outline-danger ms-3" (click)="deletes()">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
